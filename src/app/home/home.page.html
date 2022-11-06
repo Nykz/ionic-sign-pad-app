@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Sign Pad
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <app-sign-pad (signImage)="signImage($event)"></app-sign-pad>
+
+  <img *ngIf="image" [src]="image" />
+  
+</ion-content>
